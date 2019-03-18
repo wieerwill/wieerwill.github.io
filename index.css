@@ -1,0 +1,39 @@
+body {
+    font: 400 15px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #d9d9d9;
+    background-color:#ffffff;
+  }
+
+h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color:#b3b3b3;
+    font-weight: 600;
+  }
+
+a {
+    color:#cccccc;
+    text-decoration: none;
+}
+
+.clear_top{
+    font-size: 40px;
+    color:#ffffff;
+}
+
+.card-img{
+  margin-top:10%;
+  height:80%;
+}
+.list-inline-item{
+  size:15px;
+  color:#00004d;
+}
+
+.skill{
+  height:45px;
+}
+
+.show_first{display:block;}
+.show_hover{display:none;}
