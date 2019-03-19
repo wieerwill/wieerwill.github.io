@@ -1,5 +1,6 @@
 body {
-    font: 400 15px Montserrat, sans-serif;
+    font-size:14px;
+    font-family:'Merriweather', serif;
     line-height: 1.8;
     color: #d9d9d9;
     background-color:#ffffff;
@@ -37,3 +38,48 @@ a {
 
 .show_first{display:block;}
 .show_hover{display:none;}
+
+.terminal{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: #000000;
+}
+
+.window-top{
+  color: black;
+  background-color: #b0b7b2;
+  border: 1px solid #353535;
+}
+
+.terminal a, .terminal p{
+  position: relative;
+  color: #00ff00;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+.terminal .cursor{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: black;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-left: .5em solid;
+    
+  -webkit-animation: typing 12s steps(20, end) infinite,
+        blinking 1s step-end infinite;
+  animation: typing 12s steps(20, end) infinite,
+        blinking 1s step-end infinite;
+}
+
+@-webkit-keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: green; }
+}
+
+@keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: green; }
+}
