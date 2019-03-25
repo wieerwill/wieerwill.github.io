@@ -24,9 +24,20 @@ a {
 }
 
 .card-img{
-  margin-top:10%;
-  height:80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20%;
+  max-height:80%;
+  max-width:80%;
+  border-radius: 20%;
+  border-style: 
 }
+.card-img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .list-inline-item{
   size:15px;
   color:#00004d;
