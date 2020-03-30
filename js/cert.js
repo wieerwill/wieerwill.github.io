@@ -2,13 +2,13 @@
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("modalImage1");
 
-function modalImg() {
+function myModalShowImg(picture) {
     modal.style.display = "block";
-    modalImg.src = this.src;
+    modalImg.src = picture.getElementsByClassName("cert-img")[0].src;
 }
 
-// When the user clicks on <span> (x), close the modal
-var span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x) or the picture, close the modal
+var span = document.getElementsByClassName("close")[0] && document.getElementsByClassName("modal-content")[0];
 span.onclick = function () {
     modal.style.display = "none";
 };
