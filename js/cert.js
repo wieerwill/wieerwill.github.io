@@ -8,7 +8,12 @@ function myModalShowImg(picture) {
 }
 
 // When the user clicks on <span> (x) or the picture, close the modal
-var span = document.getElementsByClassName("close")[0] && document.getElementsByClassName("modal-content")[0];
+var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
+    modal.style.display = "none";
+};
+
+var picture = document.getElementsByClassName("modal-content")[0];
+picture.onclick = function () {
     modal.style.display = "none";
 };
