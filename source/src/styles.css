@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    min-height: 100%;
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    line-height: 1.8;
+    color: #d9d9d9;
+    background-color: #ffffff;
+}
+
+.content-container {
+    min-height: 50vh;
+    padding: 50px;
+    margin: 50px 0 50px 0;
+}
+
+.clear_top {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.list-inline-item {
+    size: 15px;
+    color: #00004d;
+}

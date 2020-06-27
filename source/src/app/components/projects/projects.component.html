@@ -1,0 +1,32 @@
+<mat-card class="content-container bg-info text-white" style="border-radius:20px;">
+    <mat-card-title>
+        <h1 class="my-3 text-center">
+            <span class="text-muted">My</span>&nbsp;
+            <span style="color:#ffffff">P</span><span style="color:#020077">rojects</span>&nbsp;
+            <span class="text-muted">and</span>&nbsp;
+            <span style="color:#ffffff">W</span><span style="color:#020077">orks</span>
+        </h1>
+    </mat-card-title>
+
+    <mat-card-subtitle>
+        <p class="mb-5 lead text-center">"Do what you love and work is a hobby"</p>
+    </mat-card-subtitle>
+
+    <mat-card-content>
+        <div class="project row" *ngFor="let project of projects">
+            <div class="col-12 col-md-3">
+                <h4>{{project.title}}</h4>
+            </div>
+            <div class="col-12 col-md-8">
+                <p>{{project.description}}</p>
+            </div>
+            <div class="col-12 col-md-1">
+                <a href={{project.link}} *ngIf="project.link">
+                    <mat-icon color="accent">link</mat-icon>
+                </a>
+            </div>
+            <hr class="col-9 py-4 m-auto" />
+        </div>
+    </mat-card-content>
+
+</mat-card>

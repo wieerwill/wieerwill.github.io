@@ -1,0 +1,21 @@
+<mat-card class="content-container bg-info text-white" style="border-radius:20px;">
+    <mat-card-title>
+        <h1 class="my-3 display-1 text-center">
+            <span style="color:#ffffff">S</span><span style="color:#020077">kills</span>
+            <span class="text-muted">&</span>
+            <span style="color:#ffffff">T</span><span style="color:#020077">ools</span>
+        </h1>
+    </mat-card-title>
+
+    <mat-card-subtitle>
+        <p class="mb-5 lead text-center">With the right kind of tools, everything is possible</p>
+    </mat-card-subtitle>
+
+    <mat-card-content>
+        <div>This List will be beautified soon<br></div>
+        <div class="float-left" *ngFor="let skill of skills">
+            <p>{{skill.name}}&nbsp;</p>
+        </div>
+    </mat-card-content>
+
+</mat-card>

@@ -1,0 +1,27 @@
+mat-sidenav {
+    padding: 20px;
+    min-width: 30vw;
+}
+
+mat-sidenav ul {
+    list-style-type: none;
+}
+
+mat-sidenav li {
+    margin: 20px;
+}
+
+mat-sidenav-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#sidenavbutton {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    float: left;
+    position: fixed;
+}

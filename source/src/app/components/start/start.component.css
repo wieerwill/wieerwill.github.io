@@ -1,0 +1,38 @@
+.skill {
+    height: 45px;
+}
+
+.show_first {
+    display: block;
+}
+
+.show_hover {
+    display: none;
+}
+
+.card-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 80%;
+    max-width: 80%;
+    border-radius: 20%;
+    border-style: solid;
+}
+
+.card-image:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    font-weight: 600;
+}
+
+a {
+    color: #2fff00;
+    text-decoration: none;
+}

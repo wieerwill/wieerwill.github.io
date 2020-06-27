@@ -1,0 +1,30 @@
+<mat-sidenav-container>
+    <mat-sidenav class="text-center" mode="over" #sidenav closed>
+        <h1 class="display-4"> Welcome to my Card</h1>
+        <p>my name is Robert and here you can find all sort of things i do</p>
+        <hr/>
+        <p>Click on the buttons to get to each section <br> or just scroll trough this page</p>
+        <ul>
+            <li><a href="#overview"><button mat-raised-button color="primary">Overview</button></a></li>
+            <li><a href="#skills"><button mat-raised-button color="primary">Skills and Tools</button></a></li>
+            <li><a href="#projects"><button mat-raised-button color="primary">Projects</button></a></li>
+            <li><a href="#certificates"><button mat-raised-button color="primary">Certificates</button></a></li>
+        </ul>
+        <hr/>
+        <p>In case you want to learn more about me just write me an email<br> or follow me and my works</p>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <button mat-raised-button color="primary" id="sidenavbutton" class="p-3" (click)=sidenav.toggle()>Navigation</button>
+
+        <main class="container">
+
+            <app-start id="overview"></app-start>
+            <app-skills id="skills"></app-skills>
+            <app-projects id="projects"></app-projects>
+            <app-certificates id="certificates"></app-certificates>
+
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>

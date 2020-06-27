@@ -1,0 +1,14 @@
+.project-folder {
+    background-color: #8cf5f5;
+    color: #1e3332;
+    border: 1px solid grey;
+}
+
+.project-head {
+    padding: 15px;
+    background-color: #548f8f;
+}
+
+.project a {
+    color: black;
+}
