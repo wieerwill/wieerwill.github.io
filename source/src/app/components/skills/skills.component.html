@@ -12,10 +12,24 @@
     </mat-card-subtitle>
 
     <mat-card-content>
-        <div>This List will be beautified soon<br></div>
-        <div class="float-left" *ngFor="let skill of skills">
-            <p>{{skill.name}}&nbsp;</p>
+        <div class="row justify-content-around">
+            <mat-card class="col-11 col-sm-5 m-3" *ngFor="let skill of skills">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                        <img mat-card-image class="m-auto" src="../../../assets/icons/{{skill.logo}}" alt="{{skill.name}}">
+                    </div>
+                    <mat-card-title>{{skill.name}}</mat-card-title>
+                    <mat-card-subtitle>{{skill.kategory}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>{{skill.description}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <a href="{{skill.link}}"><button mat-raised-button>goto Website</button></a>
+                </mat-card-actions>
+            </mat-card>
         </div>
+
     </mat-card-content>
 
 </mat-card>

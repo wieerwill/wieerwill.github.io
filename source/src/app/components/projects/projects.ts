@@ -1,3 +1,9 @@
+interface project {
+  title: string,
+  description: string,
+  link: string
+}
+
 export const PROJECTS = [
   {
     title: "RoboCup participants",

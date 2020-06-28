@@ -13,19 +13,24 @@
     </mat-card-subtitle>
 
     <mat-card-content>
-        <div class="project row" *ngFor="let project of projects">
+        <div class="project row my-4" *ngFor="let project of projects">
             <div class="col-12 col-md-3">
-                <h4>{{project.title}}</h4>
+                <h4 class="text-center">{{project.title}}</h4>
             </div>
             <div class="col-12 col-md-8">
                 <p>{{project.description}}</p>
             </div>
             <div class="col-12 col-md-1">
-                <a href={{project.link}} *ngIf="project.link">
-                    <mat-icon color="accent">link</mat-icon>
+                <a href={{project.link}} *ngIf="project.link; else noLink">
+                    <button mat-mini-fab color="primary">
+                        <mat-icon>link</mat-icon>
+                    </button>
                 </a>
+                <ng-template #noLink>
+                    <p>no Website so far</p>
+                </ng-template>
             </div>
-            <hr class="col-9 py-4 m-auto" />
+            <hr class="col-9 p-4 m-auto" />
         </div>
     </mat-card-content>
 

@@ -1,3 +1,8 @@
+interface certificate {
+  title: string,
+  category: string
+}
+
 export const CERTIFICATES = [
 
   { title: "Full Stack WebDev", category: "adv" },
