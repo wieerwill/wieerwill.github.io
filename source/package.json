@@ -4,7 +4,8 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
-        "build": "ng build"
+        "build": "ng build --statsJson=true --progress=true --prod=true",
+        "pwa": "node ./PWAGenerator.js"
     },
     "private": true,
     "dependencies": {
@@ -21,6 +22,7 @@
         "@popperjs/core": "^2.4.2",
         "bootstrap": "^4.5.0",
         "jquery": "^3.5.1",
+        "pwa-asset-generator": "^3.1.1",
         "rxjs": "~6.5.4",
         "tslib": "^1.10.0",
         "zone.js": "~0.10.2"
