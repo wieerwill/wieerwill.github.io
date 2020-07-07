@@ -4,15 +4,17 @@ interface certificate {
 }
 
 export const CERTIFICATES = [
-
   { title: "Full Stack WebDev", category: "adv" },
   { title: "Responsive WebDesign", category: "adv" },
   { title: "HTML5 Champion", category: "adv" },
   { title: "Advanced SQL Analytics", category: "adv" },
   { title: "DSGVO Certified", category: "adv" },
   { title: "MySQl for Data Analysis", category: "adv" },
+  { title: "Angriffsvektoren und Schutzmaßnahmen im Internet", category: "adv" },
+  { title: "Technologie Internet", category: "adv" },
 
   { title: "Basic HTML", category: "web" },
+  { title: "Homepage Design", category: "web" },
   { title: "CakePHP", category: "web" },
   { title: "Dynamic Web Forms with validation", category: "web" },
   { title: "GitHub Grundlagen", category: "web" },
@@ -37,6 +39,7 @@ export const CERTIFICATES = [
   { title: "XHTML-07", category: "web" },
   { title: "Yii PHP Framework", category: "web" },
 
+  { title: "Sicher per E-Mail kommunizieren", category: "other" },
   { title: "Amazon FBA", category: "other" },
   { title: "eBay Dropshipping", category: "other" },
   { title: "Exel 2010 Productivity", category: "other" },
