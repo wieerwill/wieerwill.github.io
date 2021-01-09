@@ -10,10 +10,20 @@ import { CERTIFICATES } from "./certificates";
 export class CertificatesComponent implements OnInit {
 
   certificates: any = CERTIFICATES;
+  show: any = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showModal(chosen: String){
+    console.log("show "+ chosen )
+    this.show = chosen
+  }
+
+  hideModal(){
+    this.show = false;
   }
 
 }

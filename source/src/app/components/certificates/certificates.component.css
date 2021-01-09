@@ -7,8 +7,7 @@
 .overlay {
     position: absolute;
     bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
@@ -23,37 +22,43 @@
     opacity: 1;
 }
 
-.modal {
-    display: none;
-    /* Hidden by default */
+/* The Close Button */
+.close {
     position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
+    z-index: 2;
+    top: 0;
+    right: 20px;
+    color: #d3d3d3;
+    font-size: 80px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myModal {
+    position: fixed;
+    z-index: 2;
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
+    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
 }
-
-
-/* Modal Content (image) */
 
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    max-width: 90%;
     max-width: 700px;
+    max-height: 100%;
+    max-height: 1000px;
 }
 
 
@@ -71,6 +76,7 @@
     from {
         -webkit-transform: scale(0)
     }
+
     to {
         -webkit-transform: scale(1)
     }
@@ -80,27 +86,8 @@
     from {
         transform: scale(0)
     }
+
     to {
         transform: scale(1)
     }
-}
-
-
-/* The Close Button */
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
 }
