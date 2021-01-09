@@ -11,11 +11,6 @@ export const PROJECTS = [
     link: "https://robocupgermanopen.de/de/junior/soccer"
   },
   {
-    title: "Student newspaper",
-    description: "A bit late i joined the schools newspaper and ranked up quickly with articles and proofleading.",
-    link: "https://passwort-sz.jimdofree.com/"
-  },
-  {
     title: "UNIKAT",
     description: "My first club at University of Ilmenau: UNIKAT, the makerspace for students and scholars.Here i worked for nearly three years on 3d - printers, CNC - milling - machines and much more.Each semester we also made a workshop week and gave our knowledge to further students.I retired at the end of 2019 but am still visiting and sometimes working there.",
     link: "https://www.tu-ilmenau.de/unikat"
@@ -37,7 +32,7 @@ export const PROJECTS = [
   },
   {
     title: "BI Student Club",
-    description: "Mainly because of the music i joined this club on my campus.With good old(and new) metal and rock we got some of the hardest partys and best members you can imageine.After some time i am one of our head technicans.Currently i am responsible for our cultural programm and association communication.",
+    description: "Mainly because of the music i joined this club on my campus.With good old(and new) metal and rock we got some of the hardest partys and best members you can imageine. After some time i am one of our head technicans. Currently i am responsible for our cultural programm and association communication.",
     link: "http://www.bi-club.de"
   },
   {
@@ -59,5 +54,15 @@ export const PROJECTS = [
     title: "Discord Bot",
     description: "With corona virus pandemia we shipped our weekly club meeting to discord.For management, fun and more interactivity we created a discord bot with several functions.",
     link: null
-  }
+  },
+  {
+    title: "Wandern bringt Wasser",
+    description: "In collaboration with Engineers without Borders, this website is a fundraiser to encourage regional companies to support the 'Water for Nyamache' project.",
+    link: ""
+  },
+  {
+    title: "Ilmenauer Studentenclub e.V.",
+    description: "After being active in one of the sections for several years, I was elected to the board of the association. In this position, I manage, organise and plan four student clubs and a student café with three other board members in close cooperation with the individual sections. This work is more exciting than before in other associations, especially because of the Corona situation.",
+    link: "http://il-sc.de"
+  },
 ];

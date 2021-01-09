@@ -1,4 +1,9 @@
+.card-image,
 .mat-card-image {
     height: auto;
     width: 50px;
+}
+
+.mat-card-avatar {
+    border-radius: 0 !important;
 }

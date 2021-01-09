@@ -176,7 +176,7 @@ export const SKILLS = [
     description: "PayPal is a listed operator of an online payment service that can be used for the payment of medium and small amounts, for example when buying and selling in online commerce."
   },
   {
-    name: "WooCommerce",
+    name: "Woo Commerce",
     kategory: "shop systems",
     logo: "woo.png",
     link: "https://woocommerce.com/",

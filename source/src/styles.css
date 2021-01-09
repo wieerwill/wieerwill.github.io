@@ -25,3 +25,23 @@ body {
     size: 15px;
     color: #00004d;
 }
+
+.bg-primary {
+    background-color: #439AFA;
+}
+
+.bg-secondary {
+    background-color: #38F8F9;
+}
+
+.bg-warning {
+    background-color: #FAAA1E;
+}
+
+.bg-danger {
+    background-color: #FA5D50;
+}
+
+.bg-other {
+    background-color: #2AFA84;
+}

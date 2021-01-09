@@ -1,9 +1,9 @@
-<mat-card class="content-container bg-info text-white" style="border-radius:20px;">
+<mat-card class="content-container bg-primary text-white" style="border-radius:20px;">
     <mat-card-title>
         <h1 class="my-3 display-1 text-center">
-            <span style="color:#ffffff">S</span><span style="color:#020077">kills</span>
+            <span style="color:#ffffff">S</span><span style="color:#bebdff">kills</span>
             <span class="text-muted">&</span>
-            <span style="color:#ffffff">T</span><span style="color:#020077">ools</span>
+            <span style="color:#ffffff">T</span><span style="color:#bebdff">ools</span>
         </h1>
     </mat-card-title>
 
@@ -13,19 +13,19 @@
 
     <mat-card-content>
         <div class="row justify-content-around">
-            <mat-card class="col-11 col-sm-5 m-3" *ngFor="let skill of skills">
+            <mat-card class="col-4 col-sm-2 m-2" *ngFor="let skill of skills">
                 <mat-card-header>
-                    <div mat-card-avatar class="example-header-image">
+                    <div mat-card-avatar>
                         <img mat-card-image class="m-auto" src="../../../assets/icons/{{skill.logo}}" alt="{{skill.name}}">
                     </div>
                     <mat-card-title>{{skill.name}}</mat-card-title>
                     <mat-card-subtitle>{{skill.kategory}}</mat-card-subtitle>
                 </mat-card-header>
-                <mat-card-content>
+                <!--<mat-card-content>
                     <p>{{skill.description}}</p>
-                </mat-card-content>
+                </mat-card-content>-->
                 <mat-card-actions>
-                    <a href="{{skill.link}}"><button mat-raised-button>goto Website</button></a>
+                    <a href="{{skill.link}}"><button mat-raised-button>visit Website</button></a>
                 </mat-card-actions>
             </mat-card>
         </div>
