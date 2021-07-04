@@ -1,0 +1,53 @@
+{
+  "name": "wieerwill.github.io",
+  "short_name": "wieerwill.github.io",
+  "description": "Get to know Wieerwill at Github.io",
+  "icons": [
+    {
+      "src": "/wieerwill.github.io/_nuxt/icons/icon_64x64.1b075a.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/wieerwill.github.io/_nuxt/icons/icon_120x120.1b075a.png",
+      "sizes": "120x120",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/wieerwill.github.io/_nuxt/icons/icon_144x144.1b075a.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/wieerwill.github.io/_nuxt/icons/icon_152x152.1b075a.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/wieerwill.github.io/_nuxt/icons/icon_192x192.1b075a.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/wieerwill.github.io/_nuxt/icons/icon_384x384.1b075a.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/wieerwill.github.io/_nuxt/icons/icon_512x512.1b075a.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/wieerwill.github.io/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en"
+}
