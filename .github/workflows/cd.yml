@@ -19,7 +19,6 @@ jobs:
         uses: actions/setup-node@v2.1.2
         with:
           node-version: ${{ matrix.node }}
-        working-directory: ./nuxt
 
       - name: Install dependencies
         run: yarn
@@ -33,5 +32,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-        working-directory: ./nuxt
+          publish_dir: ./nuxt/dist
