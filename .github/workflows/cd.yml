@@ -15,22 +15,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: Switch folder
-        run: cd nuxt
-
       - name: Setup node env
         uses: actions/setup-node@v2.1.2
         with:
           node-version: ${{ matrix.node }}
+        working-directory: ./nuxt
 
       - name: Install dependencies
         run: yarn
+        working-directory: ./nuxt
 
       - name: Generate
         run: yarn run generate
+        working-directory: ./nuxt
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+        working-directory: ./nuxt
