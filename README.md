@@ -12,6 +12,8 @@ People love it when something moves and changes it's shape, so use the power of 
 ## Vue
 The new Version is build with VUE. Very similar to Angular you will get easy into it.
 
+![](nuxt.png)
+
 Synthwave design based on https://codepen.io/inegoita/pen/BgdXMw?editors=1000
 
 ### Build Setup
@@ -37,6 +39,8 @@ This page is completely build in [Angular 9](https://angular.io). Even if you ar
   - `ng build`: Compiles and builds the whole angular project. The build artifacts will be stored in the `dist/` directory (can be changed in the 'angular.json'). Use the `--prod` flag for a production build.
   - `ng generate component component-name`: run to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
   - `ng help`: To get more help on the Angular CLI or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+![](angular.png)
 
 ### Angular Material
 [Material Design](https://material.angular.io) components for Angular. Fully tested across modern browsers. Built by the Angular team to integrate seamlessly with Angular.
