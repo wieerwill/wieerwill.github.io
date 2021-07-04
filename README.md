@@ -1,5 +1,5 @@
 # Business Card
-This is a repository with my personal angular-powered business card. Feel free to reuse this as a template for your own card but please refer back to me.
+This repository is my personal business card. Feel free to reuse this as a template for your own card but please refer back to me.
 With GitHub you can Present yourself easily and without a fee, as you can setup an account and use their hosting service.
 
   1. SignUp/Register on GitHub to get to your profile
@@ -11,6 +11,8 @@ People love it when something moves and changes it's shape, so use the power of 
 
 ## Vue
 The new Version is build with VUE. Very similar to Angular you will get easy into it.
+
+You can find all source files in [/nuxt](/nuxt)
 
 ![](nuxt.png)
 
@@ -39,6 +41,8 @@ This page is completely build in [Angular 9](https://angular.io). Even if you ar
   - `ng build`: Compiles and builds the whole angular project. The build artifacts will be stored in the `dist/` directory (can be changed in the 'angular.json'). Use the `--prod` flag for a production build.
   - `ng generate component component-name`: run to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
   - `ng help`: To get more help on the Angular CLI or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+You can find all source files in [/anuglar](/angular)
 
 ![](angular.png)
 
