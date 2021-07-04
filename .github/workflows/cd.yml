@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Switch folder
-        uses: cd nuxt
+        run: cd nuxt
 
       - name: Setup node env
         uses: actions/setup-node@v2.1.2
