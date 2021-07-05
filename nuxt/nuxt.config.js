@@ -2,9 +2,6 @@ export default {
   ssr: false, // Disable Server Side rendering
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  router: {
-    base: '/wieerwill.github.io/'
-  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
