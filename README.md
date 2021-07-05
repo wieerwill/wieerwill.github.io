@@ -35,6 +35,9 @@ $ yarn start
 $ yarn generate
 ```
 
+### GitHub Actions
+With `.github/workflow/cd.yml` there is a github action implemented. With every push to your repository a new build is generated and served on the branch `gh-pages`. Go in your repository settings and change your Pages source from master branch to `gh-pages` branch.
+
 ## Angular
 This page is completely build in [Angular 9](https://angular.io). Even if you are new to programming or webdevelopment this is a realy easy start to get to simple goals really fast. All development files for this static site are in the "source" folder. Install all necassaries you need for Angular and start an command line tool to start up. Here's a list of commands:
   - `ng serve`: Starts the development server on your localhost machine. Wait for compiling and navigate to `http://localhost:4200/` on your machine. The app will automatically reload if you change any of the source files.
