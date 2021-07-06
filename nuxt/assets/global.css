@@ -231,6 +231,34 @@
   }
 }
 
+.ui-control{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  white-space: nowrap;
+}
+.ui-control button{
+  border: 3px solid #a684cb;
+  background-color: #b533b3;
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+  animation: background-flicker 6s ease-in-out infinite;
+}
+.ui-control span{
+  font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+.ui-control button{
+  border: 0px solid #fff;
+  background-color: #dd3dda;
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+}
+}
+
+
 .titleview {
   position: absolute;
   left: 50%;

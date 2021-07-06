@@ -209,6 +209,18 @@
       <div class="road-off"></div>
     </div>
     <div class="overlay"></div>
+
+    <div class="ui-control">
+      <button @click="toggleSound">
+        <span v-if="isSoundEnabled" class="material-icons"> volume_up </span>
+        <span v-else class="material-icons"> volume_off</span>
+      </button>
+      <button @click="playSound">
+        <span v-if="!isSoundPlaying" class="material-icons"> play_arrow</span>
+        <span v-else class="material-icons"> pause </span>
+      </button>
+    </div>
+
     <Nuxt />
 
     <svg width="0" height="0">
@@ -270,5 +282,45 @@
 </template>
 
 <script>
-export default {};
+import zap from "@/assets/sounds/Three Chain Links - Die Historic.mp3";
+
+export default {
+  data() {
+    return {
+      audio: null,
+      isSoundPlaying: false,
+    };
+  },
+  mounted() {
+    this.$store.commit("initializeSound");
+        this.audio = new Audio(zap);
+  },
+  methods: {
+    toggleSound() {
+      this.$store.commit("toggleSound");
+      if(this.isSoundEnabled){
+        this.isSoundPlaying = true;
+        this.audio.play();
+      } else {
+        this.isSoundPlaying = false;
+        this.audio.pause();
+      }
+    },
+    playSound() {
+      if (this.isSoundEnabled && !this.isSoundPlaying) {
+        this.isSoundPlaying = true;
+        this.audio.loop = true;
+        this.audio.play();
+      } else if (this.isSoundEnabled && this.isSoundPlaying) {
+        this.isSoundPlaying = false;
+        this.audio.pause();
+      }
+    },
+  },
+  computed: {
+    isSoundEnabled() {
+      return this.$store.state.isSoundEnabled;
+    },
+  },
+};
 </script>

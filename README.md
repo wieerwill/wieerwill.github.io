@@ -16,7 +16,8 @@ You can find all source files in [/nuxt](/nuxt)
 
 ![](nuxt.png)
 
-Synthwave design based on https://codepen.io/inegoita/pen/BgdXMw?editors=1000
+- Synthwave design based on [inegoita Codepen](https://codepen.io/inegoita/pen/BgdXMw?editors=1000)
+- Background Music by [Three Chain Links - Die Historic](https://soundcloud.com/beardmont)
 
 ### Build Setup
 ```bash
