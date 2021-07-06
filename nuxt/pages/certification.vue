@@ -60,6 +60,7 @@ export default {
   width: 80%;
   margin: auto;
   margin-top: 25vh;
+  margin-bottom: 20vh;
   text-align: center;
 }
 .container em {

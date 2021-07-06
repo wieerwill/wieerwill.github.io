@@ -33,6 +33,7 @@ div
   width: 80%;
   margin: auto;
   margin-top: 25vh;
+  margin-bottom: 20vh;
   padding: auto;
   text-align: center;
 }

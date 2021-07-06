@@ -75,6 +75,7 @@ export default {
   width: 80%;
   margin: auto;
   margin-top: 25vh;
+  margin-bottom: 20vh;
   padding: 20px;
   border-radius: 20px;
   background: linear-gradient(
