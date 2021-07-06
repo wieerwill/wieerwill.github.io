@@ -18,7 +18,7 @@ div
       .chrome.small.shine(data-text="my Tools") my Tools
       .column(v-for="tool of tools", :key="tool.name", :class="tool.kategory")
         a.card(:href="tool.link")
-          nuxt-img(:src="`icons/${tool.logo}`")
+          img(:src="`icons/${tool.logo}`")
   .footer
     NuxtLink.navbutton(to="/") Home
     NuxtLink.navbutton(to="/profile") Profile

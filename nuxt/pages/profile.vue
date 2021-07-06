@@ -6,7 +6,7 @@ div
 
   .container
     .siderow
-      nuxt-img.card-image(src="pic.png")
+      img.card-image(src="pic.png")
       ul.card-list
         li
           a(href="mailto:jeutter@northscorp.de", target="_blank")
