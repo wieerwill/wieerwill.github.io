@@ -282,7 +282,7 @@
 </template>
 
 <script>
-import zap from "@/assets/sounds/Three Chain Links - Die Historic.mp3";
+//import zap from "@/assets/sounds/Three Chain Links - Die Historic.mp3";
 
 export default {
   data() {
@@ -293,12 +293,12 @@ export default {
   },
   mounted() {
     this.$store.commit("initializeSound");
-        this.audio = new Audio(zap);
+    this.audio = new Audio("/sounds/Three Chain Links - Die Historic.mp3");
   },
   methods: {
     toggleSound() {
       this.$store.commit("toggleSound");
-      if(!this.isSoundEnabled){
+      if (!this.isSoundEnabled) {
         this.isSoundPlaying = false;
         this.audio.pause();
       }
