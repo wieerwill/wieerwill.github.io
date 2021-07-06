@@ -298,10 +298,7 @@ export default {
   methods: {
     toggleSound() {
       this.$store.commit("toggleSound");
-      if(this.isSoundEnabled){
-        this.isSoundPlaying = true;
-        this.audio.play();
-      } else {
+      if(!this.isSoundEnabled){
         this.isSoundPlaying = false;
         this.audio.pause();
       }
