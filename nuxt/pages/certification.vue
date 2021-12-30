@@ -121,6 +121,18 @@ export default {
       #27034bde 100%
     );
   }
+  33% {
+    background: linear-gradient(
+      90deg,
+      #343a80de 0%,
+      #3d4a75de 10%,
+      #6668aade 27%,
+      #e1217bde 33%,
+      #a20e69de 40%,
+      #670558de 73%,
+      #27034bde 100%
+    );
+  }
   40% {
     background: linear-gradient(
       90deg,
@@ -154,6 +166,18 @@ export default {
       #e1217bde 60%,
       #a20e69de 65%,
       #670558de 85%,
+      #27034bde 100%
+    );
+  }
+  67% {
+    background: linear-gradient(
+      90deg,
+      #343a80de 0%,
+      #3d4a75de 30%,
+      #6668aade 62%,
+      #e1217bde 67%,
+      #a20e69de 77%,
+      #670558de 87%,
       #27034bde 100%
     );
   }
