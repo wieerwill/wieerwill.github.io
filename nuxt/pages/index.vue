@@ -2,21 +2,32 @@
 div
   .titleview
     .outrun.glow
-      a(href="https://github.com/wieerwill") GitHub.io
-    .chrome.large.shine(data-text="Wieerwill") Wie
+      a(href="https://github.com/wieerwill") {{ subtitle }}
+    .chrome.large.shine(:data-text="title1 + title2") {{ title1 }}
       span.spark
-      | erwill
+      | {{ title2 }}
   .buttonrow
     NuxtLink(to="/profile")
       button
-        span#offset St
-        span art
+        span#offset {{ button1 }}
+        span {{ button2 }}
 </template>
 
 <script>
+import life from "../life";
 export default {
   head: {
-    title: 'Welcome'
+    title: "Welcome",
   },
-}
+  data() {
+    return {
+      title1: life.home.title1,
+      title2: life.home.title2,
+      subtitle: life.home.subtitle,
+      button1: life.home.button1,
+      button2: life.home.button2,
+      github: life.home.githubLink,
+    };
+  },
+};
 </script>

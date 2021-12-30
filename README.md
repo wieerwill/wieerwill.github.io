@@ -8,6 +8,8 @@ With GitHub you can Present yourself easily and without a fee, as you can setup 
 
 People love it when something moves and changes it's shape, so use the power of CSS and JS to create an interactive and rememberable portfolio.
 
+NEW: VUE can now generate your complete pages from only a single file with all entries ever needed. Never could be easier. Only change one file to change all texts, icons and links.
+
 
 ## Vue
 The new Version is build with VUE. Very similar to Angular you will get easy into it.
@@ -18,6 +20,7 @@ You can find all source files in [/nuxt](/nuxt)
 
 - Synthwave design based on [inegoita Codepen](https://codepen.io/inegoita/pen/BgdXMw?editors=1000)
 - Background Music by [Three Chain Links - Die Historic](https://soundcloud.com/beardmont)
+- Soundeffects by [Soundbible](https://soundbible.com/royalty-free-sounds-14.html)
 
 ### Build Setup
 ```bash
@@ -46,7 +49,7 @@ This page is completely build in [Angular 9](https://angular.io). Even if you ar
   - `ng generate component component-name`: run to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
   - `ng help`: To get more help on the Angular CLI or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-You can find all source files in [/anuglar](/angular)
+You can find all source files in [/angular](/angular)
 
 ![](angular.png)
 

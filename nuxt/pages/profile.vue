@@ -1,73 +1,47 @@
 <template lang="pug">
 div 
   .title
-    .outrun.small.glow Inventor &middot; Entrepreneur &middot; Student
-    .chrome.medium.shine(data-text="Robert Jeutter") Robert Jeutter
+    .outrun.small.glow(v-html="subtitle")
+    .chrome.medium.shine(:data-text="title") {{ title }}
 
   .container
     .siderow
       img.card-image(src="pic.png")
       ul.card-list
-        li
-          a(href="mailto:jeutter@northscorp.de", target="_blank")
-            span.material-icons mail
-            span Mail
-        li
-          a(href="http://www.github.com/wieerwill", target="_blank")
-            span.material-icons code
-            span GitHub
-        li
-          a(href="http://www.northscorp.de", target="_blank")
-            span.material-icons language
-            span NorthScorp
-        li
-          a(href="http://www.tu-ilmenau.de", target="_blank")
-            span.material-icons account_balance
-            span TU Ilmenau
-        li
-          a(href="https://www.udemy.com/user/robert-jeutter/", target="_blank")
-            span.material-icons school
-            span Udemy
-        li
-          a(
-            href="https://www.freecodecamp.org/robert-jeutter",
-            target="_blank"
-          )
-            span.material-icons local_library
-            span CodeCamp
+        li(v-for="link in linklist", :key="link.text")
+          a(:href="link.link", target="_blank")
+            span.material-icons {{ link.icon }}
+            span {{ link.text }}
     .card-text
-      p Welcome to my Card,
-        br
-        | currently I am studying at&nbsp;
-        i
-          a(href="http://www.tu-ilmenau.de") Technical University of Ilmenau&nbsp;
-        | in the fields of Computer Sience and Biomechatronics.&nbsp;
-        | In addition i am an active member of the&nbsp;
-        a(href="https://www.bi-club.de") student club
-        | ,
-        a(href="https://ingenieure-ohne-grenzen.org/") &nbsp;Engineers without Borders&nbsp;
-        |
-        | and building up my own business&nbsp;
-        a(href="https://www.northscorp.de") NorthScorp
-        | .&nbsp;
-        br
-        | My Hobbies include Programming, building Robots ever since my&nbsp;
-        a(href="https://www.robocup.org/") RoboCup&nbsp;
-        | Qualifications and electromechanical Machines.
+      p(v-html="text")
 
   .footer
-    NuxtLink.navbutton(to="/") Home
-    NuxtLink.navbutton(to="/skills") Skills
-    NuxtLink.navbutton(to="/projects") Projects
-    NuxtLink.navbutton(to="/certification") Certification
+    NuxtLink.navbutton(to="/") {{ homeLink }}
+    NuxtLink.navbutton(to="/skills") {{ skillLink }}
+    NuxtLink.navbutton(to="/projects") {{ projectLink }}
+    NuxtLink.navbutton(to="/certification") {{ certificationLink }}
 </template>
 
 <script>
+import life from "../life";
 export default {
   head: {
-    title: 'Profile'
+    title: life.profile.title,
   },
-}
+  data() {
+    return {
+      title: life.profile.title,
+      subtitle: life.profile.subtitle,
+      text: life.profile.text,
+      linklist: life.profile.linklist,
+      homeLink: life.home.link,
+      profileLink: life.profile.link,
+      skillLink: life.skills.link,
+      certificationLink: life.certification.link,
+      projectLink: life.projects.link,
+    };
+  },
+};
 </script>
 
 <style scoped>

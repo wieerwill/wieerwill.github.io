@@ -1,53 +1,41 @@
 <template lang="pug">
 div 
   .title
-    .outrun.small.glow show me what you got
-    .chrome.medium.shine(data-text="Certifications") Certifications
+    .outrun.small.glow {{ subtitle }}
+    .chrome.medium.shine(:data-text="title") {{ title }}
 
   .container
-    em &laquo;What is a piece of paper else a note in time?&raquo;
+    em &laquo;{{ quote }}&raquo;
     .gallery
       article(v-for="cert in certification", :key="cert.title")
         h4 {{ cert.title }}
         p(v-for="text in cert.text") {{ text }}
   .footer
-    NuxtLink.navbutton(to="/") Home
-    NuxtLink.navbutton(to="/profile") Profile
-    NuxtLink.navbutton(to="/skills") Skills
-    NuxtLink.navbutton(to="/projects") Projects
+    NuxtLink.navbutton(to="/") {{ homeLink }}
+    NuxtLink.navbutton(to="/profile") {{ profileLink }}
+    NuxtLink.navbutton(to="/skills") {{ skillLink }}
+    NuxtLink.navbutton(to="/projects") {{ projectLink }}
 </template>
 
 <script>
+import life from "../life";
+
 export default {
   head: {
-    title: 'Certification'
+    title: life.certification.title,
   },
   data() {
     return {
       show: false,
-      certification: [
-        {
-          title: "FullStack Web Developer",
-          text: [
-            "Frontend with Angular, Vue and more",
-            "Backend with NodeJS, C++ and more",
-          ],
-        },
-        {
-          title: "Software Developer",
-          text: ["Trained C/C++ Dev with agil and unified approach"],
-        },
-        {
-          title: "Data Protection Officer",
-          text: ["trained & qualified specialist", "BDSG & GDPR"],
-        },
-        {
-          title: "SixSigma Yellow Belt",
-          text: [
-            "trained project management, improvment and quality ensurance",
-          ],
-        },
-      ],
+      title: life.certification.title,
+      subtitle: life.certification.subtitle,
+      quote: life.certification.quote,
+      certification: life.certification.list,
+      homeLink: life.home.link,
+      profileLink: life.profile.link,
+      skillLink: life.skills.link,
+      certificationLink: life.certification.link,
+      projectLink: life.projects.link,
     };
   },
 };
