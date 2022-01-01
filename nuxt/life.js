@@ -173,7 +173,7 @@ const life = {
         link: "https://github.com/wieerwill/aegis-dos-protection"
       },
       {
-        datetime: "2021-2022",
+        datetime: "2021-today",
         title: "Objektposenschätzung",
         description: "Object-Pose-Estimation is a work for university regarding state of the art technologies to detect novel objects in RGB and RGB-D inputs and estimating their 3-dimensional scale, translation and rotation. Pre-Work for robot automation to be able to grab new objects.",
         link: "https://github.com/wieerwill/Objektposenschaetzung"
@@ -183,6 +183,18 @@ const life = {
         title: "MobilePenBerry",
         description: "This is a little project aiming for a multi-purpose mobile Penetration, Pwning and Wifi-Testing Station on a RaspberryPi. Next to that i gather all snippets and helps related to RaspberryPi and additonal parts. Only for LAWFUL, ETHICAL AND EDUCATIONAL PURPOSES",
         link: "https://github.com/wieerwill/MobilePenBerry"
+      },
+      {
+        datetime: "2021",
+        title: "GO Playground",
+        description: "With my PenBerry up and running well i wanted to get deeper into GO. This repository is a collection of tutorials and simple self-made programs to test and play with GO.",
+        link: "https://github.com/wieerwill/go_playground"
+      },
+      {
+        datetime: "2022",
+        title: "C++ Playground",
+        description: "Here you can find different C/C++ programms, compilers and tools to work with C++. Get to know and play with this great language i use now for over a decade.",
+        link: "https://github.com/wieerwill/cpp_playground"
       }
     ],
   },
