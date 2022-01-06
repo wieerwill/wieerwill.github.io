@@ -48,7 +48,7 @@ const life = {
       { link: "http://www.northscorp.de", icon: "language", text: "NorthScorp" },
       { link: "http://www.tu-ilmenau.de", icon: "account_balance", text: "TU Ilmenau" },
       { link: "https://www.udemy.com/user/robert-jeutter/", icon: "school", text: "Udemy" },
-      { link: "https://www.freecodecamp.org/robert-jeutter", icon: "local_library", text: "CodeCamp" },
+      { link: "https://www.freecodecamp.org/wieerwill", icon: "local_library", text: "CodeCamp" },
     ]
   },
   projects: {
