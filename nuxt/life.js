@@ -99,7 +99,7 @@ const life = {
                 link: "https://robocupgermanopen.de/de",
             },
             {
-                datetime: "2018 - today",
+                datetime: "2018 - 2023",
                 title: "Engineers without borders ",
                 description: "Who are we? Engineering students! What are we doing ? Helping other people! As some of us are planning and working on projects down in africa i am responsible for the repair cafe to keep things running.",
                 link: "https://ingenieure-ohne-grenzen.org/de/ilmenau",
@@ -129,7 +129,7 @@ const life = {
                 link: "https://github.com/wieerwill/wieerwill.github.io",
             },
             {
-                datetime: "2019 - today",
+                datetime: "2019 - 2022",
                 title: "Informatik",
                 description: "Ever been interested what they teach at university? Need help or are lost? Take a look at my notes from university that i and my commilitones write down during our studies.",
                 link: "https://github.com/wieerwill/informatik",
@@ -147,13 +147,7 @@ const life = {
                 link: "https://github.com/wieerwill/dsgvo-templates",
             },
             {
-                datetime: "2020",
-                title: "Wandern bringt Wissen",
-                description: "In collaboration with Engineers without Borders, this website is a fundraiser to encourage regional companies to support the 'Water for Nyamache' project and many other.",
-                link: "",
-            },
-            {
-                datetime: "2020-today",
+                datetime: "2020-2022",
                 title: "Ilmenauer Studentenclub e.V.",
                 description: "After being active in one of the sections for several years, I was elected to the board of the association. In this position, I manage, organise and plan four student clubs and a student café with three other board members in close cooperation with the individual sections. This work is more exciting than before in other associations, especially because of the Corona situation.",
                 link: "http://il-sc.de",
@@ -177,7 +171,7 @@ const life = {
                 link: "https://github.com/wieerwill/aegis-dos-protection"
             },
             {
-                datetime: "2021-today",
+                datetime: "2021-2022",
                 title: "Objektposenschätzung",
                 description: "Object-Pose-Estimation is a work for university regarding state of the art technologies to detect novel objects in RGB and RGB-D inputs and estimating their 3-dimensional scale, translation and rotation. Pre-Work for robot automation to be able to grab new objects.",
                 link: "https://github.com/wieerwill/Objektposenschaetzung"
@@ -199,6 +193,11 @@ const life = {
                 title: "C++ Playground",
                 description: "Here you can find different C/C++ programms, compilers and tools to work with C++. Get to know and play with this great language i use now for over a decade.",
                 link: "https://github.com/wieerwill/cpp_playground"
+            },
+            {
+                datetime: "2023",
+                title: "RoboCup Team @Home",
+                description: "This year the AraCom IT Services GmbH got me funded to start a own RoboCup Team. We will take part in the @Home League and work together with variuos Universities."
             }
         ],
     },
